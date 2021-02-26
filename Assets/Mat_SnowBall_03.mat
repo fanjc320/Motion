@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mat_SnowBall_03
+  m_Shader: {fileID: 4800000, guid: 73b96b02427b5034a81a4f57db8df385, type: 3}
+  m_ShaderKeywords: _EMISSION _ISKAGE_NORMAL_ON _LG_SWITCH_ON
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 09b386362e9978d4e994cdd6c062e91a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_R_SP_G:
+        m_Texture: {fileID: 2800000, guid: da5163d8a4426cf4a8ef28c844556897, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Fr_Fw: 0.52
+    - _Fr_Pw: 0.65
+    - _Sp_Gloss: -0.23
+    m_Colors:
+    - _Fr_Color: {r: 0.155439, g: 0.8170302, b: 0.8455882, a: 1}
+    - _Light: {r: 0.20112453, g: 0.5811656, b: 0.9117647, a: 1}
+    - _MainColor: {r: 0.7832404, g: 0.5726103, b: 0.875, a: 1}
+    - _SpecColor: {r: 1, g: 0.83235294, b: 0.5808823, a: 1}

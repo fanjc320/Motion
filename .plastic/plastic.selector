@@ -1,0 +1,4 @@
+repository "Motion1@ssl://fjc@sh03-plasticscm.unity.cn:8787"
+  path "/"
+    smartbranch "/main/894020798" 
+     
