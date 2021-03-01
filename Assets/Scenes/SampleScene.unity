@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 348112568}
   - component: {fileID: 348112567}
   - component: {fileID: 348112566}
+  - component: {fileID: 348112565}
   m_Layer: 0
   m_Name: Up_Force
   m_TagString: Untagged
@@ -456,6 +457,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &348112565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348112564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bba256235a6ec34b893b5f8d73acbaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 30
+  yz_drive: 0
 --- !u!153 &348112566
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -940,6 +955,7 @@ GameObject:
   - component: {fileID: 1670826860}
   - component: {fileID: 1670826859}
   - component: {fileID: 1670826858}
+  - component: {fileID: 1670826864}
   m_Layer: 0
   m_Name: Up_Drive
   m_TagString: Untagged
@@ -1132,6 +1148,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+--- !u!114 &1670826864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670826857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f0c7aeada46cd469f46567b5d003ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 30
+  yz_drive: 0
 --- !u!1 &1788780306
 GameObject:
   m_ObjectHideFlags: 0
