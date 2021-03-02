@@ -10,6 +10,10 @@ public class Jump_Force : MonoBehaviour
     private Rigidbody con_rd;
     Transform tf_ground;
     ConfigurableJoint jt;
+    public Transform tf_jt_up_begin;
+    public Transform tf_jt_up_end;
+    public Transform tf_jt_down_begin;
+    public Transform tf_jt_down_end;
     //ConfigurableJointMotion jt_motion; //lock free limit
     // Start is called before the first frame update
     void Start()
@@ -17,12 +21,14 @@ public class Jump_Force : MonoBehaviour
         rd = this.GetComponent<Rigidbody>();
         con_rd = this.GetComponent<ConfigurableJoint>().connectedBody;
         jt = this.GetComponent<ConfigurableJoint>();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.DrawLine(worldPos1, worldPos2, Color.yellow);
     }
 
     private void FixedUpdate()
@@ -55,5 +61,15 @@ public class Jump_Force : MonoBehaviour
         jt_tmp.positionDamper = jt.angularYZDrive.positionDamper;
 
         jt.angularYZDrive = jt_tmp;
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        Vector3 lineBegin = new Vector3(tf_jt_up_begin.position.x, tf_jt_up_begin.position.y, tf_jt_up_begin.position.z);
+        Vector3 lineEnd = new Vector3(tf_jt_up_end.position.x, tf_jt_up_end.position.y, tf_jt_up_end.position.z);
+        //Gizmos.DrawLine(lineBegin, lineEnd);
+        Gizmos.DrawLine(Vector3.zero, lineBegin);
+        Gizmos.DrawLine(Vector3.zero, lineEnd);
+        Gizmos.DrawLine(Vector3.zero, new Vector3(0, 3f, 0));
     }
 }
